@@ -77,7 +77,7 @@ Error generating stack: `+u.message+`
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const qf=[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"17 8 12 3 7 8",key:"t8dd8p"}],["line",{x1:"12",x2:"12",y1:"3",y2:"15",key:"widbto"}]],bf=Ll("upload",qf);function ed(){const[N,M]=on.useState(!1),[m,J]=on.useState(null),F=()=>{console.log("toggleTheme Clicked!"),console.log("Before isDarkmode value:",N),M(!N),console.log("After isDarkmode value:",N)},A=()=>{const Q=`RESUME
+ */const qf=[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"17 8 12 3 7 8",key:"t8dd8p"}],["line",{x1:"12",x2:"12",y1:"3",y2:"15",key:"widbto"}]],bf=Ll("upload",qf);function ed(){const[N,M]=on.useState(!0),[m,J]=on.useState(null),F=()=>{console.log("toggleTheme Clicked!"),console.log("Before isDarkmode value:",N),M(!N),console.log("After isDarkmode value:",N)},A=()=>{const Q=`RESUME
 
 John Doe
 Web Developer
