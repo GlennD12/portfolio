@@ -14,7 +14,7 @@ export default function App() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/portfolio/src/files/glenn-dale-magbanua-resume.pdf';
+    link.href = '/files/glenn-dale-magbanua-resume.pdf';
     link.download = 'glenn-dale-magbanua-resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -64,7 +64,7 @@ export default function App() {
               <div className="grid place-items-center text-center">
                 <div className="flex flex-col md:flex-row items-center gap-8 mb-5">
                   <div className="w-44">
-                    <img className="w-44 h-44 rounded-full object-cover" src="src/images/profile.jpg" alt="Profile"/>
+                    <img className="w-44 h-44 rounded-full object-cover" src="/images/profile.jpg" alt="Profile"/>
                   </div>
                   <div>
                     <h1 className="text-5xl font-bold text-gray-900 dark:text-white">Glenn Dale Magbanua</h1>
