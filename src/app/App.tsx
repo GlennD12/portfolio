@@ -6,7 +6,10 @@ export default function App() {
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
 
   const toggleTheme = () => {
+    console.log("toggleTheme Clicked!");
+    console.log("Before isDarkmode value:", isDarkMode);
     setIsDarkMode(!isDarkMode);
+    console.log("After isDarkmode value:", isDarkMode);
   };
 
   const handleDownload = () => {
@@ -35,7 +38,7 @@ export default function App() {
         {/* Header */}
         <header className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Portfolio</h1>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">GlennD</h1>
             <div className="flex items-center gap-4">
               <button
                 onClick={handleDownload}
@@ -60,7 +63,7 @@ export default function App() {
           <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="text-center">
               <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                Hi, I'm John Doe
+                Hi, I'm Glenn Dale
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
                 Full Stack Web Developer
@@ -240,7 +243,7 @@ export default function App() {
         <footer className="bg-gray-50 dark:bg-gray-800 py-8 border-t border-gray-200 dark:border-gray-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-gray-600 dark:text-gray-400">
-              © 2026 John Doe. All rights reserved.
+              © 2026 Glenn Dale. All rights reserved.
             </p>
           </div>
         </footer>
