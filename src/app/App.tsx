@@ -37,7 +37,7 @@ export default function App() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">GD</h1>
             <div className="flex items-center gap-4">
               <a href="#experience" className="text-sm hover:text-emerald-400 dark:hover:text-emerald-400 dark:text-gray-400 transition-colors">Experience</a>
-              <a href="#projects" className="text-sm hover:text-emerald-400 dark:hover:text-emerald-400 dark:text-gray-400 transition-colors">Projects</a>
+              {/* <a href="#projects" className="text-sm hover:text-emerald-400 dark:hover:text-emerald-400 dark:text-gray-400 transition-colors">Projects</a> */}
               <a href="#contact" className="text-sm hover:text-emerald-400 dark:hover:text-emerald-400 dark:text-gray-400 transition-colors">Contact</a>
               <button
                 onClick={handleDownload}
@@ -77,7 +77,7 @@ export default function App() {
               </div>
               <div>
                 <div className="w-full flex justify-center">
-                  <div className="mt-16 grid grid-cols-1 gap-8 md:w-1/2">
+                  <div className="mt-4 grid grid-cols-1 gap-8 md:w-1/2">
                     <div className="p-6 rounded-xl backdrop-blur border dark:border-zinc-800 dark:bg-zinc-900/50 px-auto md:px-16">
                       <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Top Skills</h2>
                       <div className="flex flex-wrap gap-2">
@@ -92,6 +92,7 @@ export default function App() {
               </div>
             </div>
           </section>
+          {/* Experience Section */}
           <section id="experience" className="py-20">
             <div className="container mx-auto px-4">
               <h2 className="text-4xl font-bold mb-12 dark:text-white text-center">Experience</h2>
@@ -154,6 +155,65 @@ export default function App() {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+          {/* Project Section */}
+          {/* <div className="container mx-auto max-w-8xl px-4">
+            <section id="projects" className="py-20">
+              <div className="container mx-auto px-4">
+                <h2 className="text-4xl font-bold mb-12 dark:text-white text-center">Projects</h2>
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <div className="bg-zinc-900/50 backdrop-blur border border-zinc-800 rounded-xl p-6 hover:border-emerald-400/50 transition-colors">
+                      <div className="mb-3 flex gap-3">
+                        <div className="flex-1">
+                          <img className="rounded-lg h-full object-cover" src="/images/" alt="" />
+                        </div>
+                        <div className="flex-2">
+                          <h3 className="text-xl font-semibold mb-3 dark:text-white wrap-anywhere">LinkedIt</h3>
+                          <p className="text-zinc-400 mb-4 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">Next.js</span>
+                        <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">TypeScript</span>
+                        <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">Tailwind CSS</span>
+                        <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">PostgreSQL</span>
+                      </div>
+                      <div className="inline-flex items-center text-sm text-emerald-400 hover:text-emerald-300 transition-colors">
+                        View Details <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      </div>
+                    </div>
+                  </a>
+                  <div className="bg-zinc-900/50 backdrop-blur border border-zinc-800 rounded-xl p-6 hover:border-emerald-400/50 transition-colors">
+                    <div className="mb-3 flex gap-3">
+                      <div className="flex-1">
+                        <img className="rounded-lg h-full object-cover" src="/projects/healthcheck.jpg" alt="" />
+                      </div>
+                      <div className="flex-2">
+                        <h3 className="text-xl font-semibold mb-3 wrap-anywhere">Weathering</h3>
+                        <p className="text-zinc-400 mb-4 text-sm">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">n8n</span>
+                      <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">Supabase</span>
+                      <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">Payment Gateway</span>
+                      <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">ChatGPT API</span>
+                      <span className="text-xs px-2 py-1 rounded-full bg-zinc-800 text-emerald-400">Data Aggregation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div> */}
+          <section id="contact" className="py-20">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-4xl font-bold mb-8 dark:text-white">Let's Connect</h2>
+              <p className="text-xl text-gray-600 dark:text-zinc-400 mb-8">Open to new opportunities and collaborations</p>
+              <a href="mailto:glenndalemagbanua@gmail.com" className="inline-block px-8 py-4 bg-emerald-500 text-white rounded-full font-semibold hover:bg-emerald-600 transition-colors">Get in Touch</a>
             </div>
           </section>
         </main>
