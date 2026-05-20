@@ -12,8 +12,8 @@ const projects: ProjectItem[] = [
   {
     title: 'XerveLab',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    url: 'https://xervelab.vercel.app',
-    image: 'https://xervelab.vercel.app/images/xl-logo.png',
+    url: 'https://xervelab.online',
+    image: 'https://xervelab.online/images/xl-logo.png',
     technologies: ['Laravel', 'React.js', 'TypeScript', 'Tailwind CSS', 'MySQL'],
   },
   {
